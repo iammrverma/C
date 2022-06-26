@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void main(){
+    // greatest among n numbers
+    int n, max=0;
+    printf("Enter Number to check greatest between: ");
+    scanf("%d", &n);
+    
+    for(int i=1; i<=n; i++){
+        int temp;
+        printf("Enter Number %d ", i);
+        scanf("%d", &temp);
+        if(temp>max){
+            max = temp;
+        }
+    }
+    printf("greatest among above is: %d", max);
+}
